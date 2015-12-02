@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Hello world!</title>
+	<meta lang="en" />
+
+	<!-- build:css vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+		<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css app.css -->
+		<!-- inject:css -->
+		<!-- endinject -->
+	<!-- endbuild -->
+	<!-- build:js vendor.js -->
+		<!-- bower:js -->
+		<script src="../bower_components/angular/angular.js"></script>
+		<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js app.js -->
+		<!-- inject:js -->
+		<script src="app/app.module.js"></script>
+		<script src="app/main.controller.js"></script>
+		<!-- endinject -->
+	<!-- endbuild -->
+</head>
+<body ng-controller="MainController as vm" class="container">
+	<h1>Hello world!</h1>
+	<p>{{vm.hello}}</p>
+</body>
+</html>

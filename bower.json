@@ -1,0 +1,16 @@
+{
+  "name": "angular-sample",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6"
+  },
+  "overrides": {
+      "bootstrap": {
+         "main":[
+            "dist/css/bootstrap.css"
+         ]
+      }
+   }
+}
