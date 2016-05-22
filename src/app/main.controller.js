@@ -1,9 +1,7 @@
-angular
-	.module('app')
-	.controller('MainController', MainController);
+var _ = require('lodash');
 
-function MainController() {
+module.exports = function(studentService) {
 	var vm = this;
 
-	vm.hello = 'welcome to the Angular world!';
+	vm.hello = studentService.get();
 }
